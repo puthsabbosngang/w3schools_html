@@ -1,0 +1,24 @@
+{
+  "name": "w3schools_html",
+  "version": "1.0.0",
+  "description": "Develop static w3schools website (front-end development) using html and bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/puthsabbosngang/w3schools_html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/puthsabbosngang/w3schools_html/issues"
+  },
+  "homepage": "https://github.com/puthsabbosngang/w3schools_html#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
