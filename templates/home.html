@@ -5,90 +5,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/static/images/icon/w3schools_icon.png">
-    <title>W3Schools Online Web </title>
+    <title>W3Schools Online Web Tutorials</title>
     <link rel="stylesheet" href="/static/style/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/style/css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    <!--top header-->
-    <nav class="navbar navbar-expand-lg top-nav">
-        <div class="container-fluid">
+    <!--top nav-->
+    <div id="nav-bar">
+        <nav class="navbar navbar-expand-lg top-nav">
+            <div class="container-fluid">
 
-            <a class="navbar-brand" href="home.html">
-                <img src="/static/images/logo/w3schools_logo.png" alt="Logo" width="80">
-            </a>
-
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            
-            <div class="collapse navbar-collapse" id="topNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Tutorials</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home.html">Exercises</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home.html">Certificates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home.html">Services</a></li>
-                </ul>
+                <a class="navbar-brand" href="home.html">
+                    <img src="/static/images/logo/w3schools_logo.png" alt="Logo" width="80">
+                </a>
 
                 
-                <form class="d-flex me-3" role="search">
-                    <input class="form-control" type="search" placeholder="Search...">
-                </form>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                
+                <div class="collapse navbar-collapse" id="topNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-Services">
+                        <!--Tutorials-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="TutorialsDropdown" href="home.html" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                                Tutorials
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="TutorialsDropdown">
+                                <li><a class="dropdown-item" href="#">HTML</a></li>
+                                <li><a class="dropdown-item" href="#">CSS</a></li>
+                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                            </ul>
+                        </li>
 
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="home.html">For Teachers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home.html">Upgrade</a></li>
-                    <li class="nav-item"><a class="nav-link" href="home.html">Get Certified</a></li>
-                    <li class="nav-item"><a class="btn btn-success" href="home.html">Sign In</a></li>
-                </ul>
+                        <!--Exercise-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="ExercisesDropdown" href="home.html" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                                Exercises
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="ExercisesDropdown">
+                                <li><a class="dropdown-item" href="#">Exercises 1</a></li>
+                                <li><a class="dropdown-item" href="#">Exercises 2</a></li>
+                                <li><a class="dropdown-item" href="#">Exercises 3</a></li>
+                            </ul>
+                        </li>
+
+                        <!--Certificates-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="CertificatesDropdown" href="home.html" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                                Certificates
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="CertificatesDropdown">
+                                <li><a class="dropdown-item" href="#">Certificates 1</a></li>
+                                <li><a class="dropdown-item" href="#">Certificates 2</a></li>
+                                <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+                            </ul>
+                        </li>
+
+                        <!--Services-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="ServicesDropdown" href="home.html" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="ServicesDropdown">
+                                <li><a class="dropdown-item" href="#">Services 1</a></li>
+                                <li><a class="dropdown-item" href="#">Services 2</a></li>
+                                <li><a class="dropdown-item" href="#">Services 3</a></li>
+                            </ul>
+                        </li>
+
+                        <form class="d-flex me-5 " role="search">
+                            <input class="form-control" type="search" placeholder="Search...">
+                        </form>
+                        
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <a class="nav-link" href="home.html">For Teachers</a>
+                        <a class="nav-link" href="home.html">Upgrade</a>
+                        <a class="nav-link" href="home.html">Get Certified</a>
+                        <a class="btn btn-success" href="home.html">Sign In</a>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bottom-nav">
+            <div class="container-fluid df-flex align-item-center">
+                <button class="scroll-btn me-2" id="scrollLeft">&lt;</button>
+                <!-- Scrollable Menu -->
+                <div class="scroll-menu flex-grow-1" id="menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link" href="#">HTML</a>
+                        <a class="nav-link" href="#">CSS</a>
+                        <a class="nav-link" href="#">JavaScript</a>
+                        <a class="nav-link" href="#">SQL</a>
+                        <a class="nav-link" href="#">Python</a>
+                        <a class="nav-link" href="#">Java</a>
+                        <a class="nav-link" href="#">PHP</a>
+                        <a class="nav-link" href="#">HowTo</a>
+                        <a class="nav-link" href="#">W3.CSS</a>
+                        <a class="nav-link" href="#">C</a>
+                        <a class="nav-link" href="#">C++</a>
+                        <a class="nav-link" href="#">C#</a>
+                        <a class="nav-link" href="#">BOOTSTRAP</a>
+                        <a class="nav-link" href="#">REACT</a>
+                        <a class="nav-link" href="#">MYSQL</a>
+                        <a class="nav-link" href="#">JQUERY</a>
+                        <a class="nav-link" href="#">EXCEL</a>
+                        <a class="nav-link" href="#">XML</a>
+                        <a class="nav-link" href="#">DJANGO</a>
+                        <a class="nav-link" href="#">NUMPY</a>
+                        <a class="nav-link" href="#">PANDAS</a>
+                        <a class="nav-link" href="#">NODEJS</a>
+                        <a class="nav-link" href="#">DSA</a>
+                        <a class="nav-link" href="#">TYPESCRIPT</a>
+                        <a class="nav-link" href="#">ANGULAR</a>
+                        <a class="nav-link" href="#">GIT</a>
+                        <a class="nav-link" href="#">POSTGRESQL</a>
+                        <a class="nav-link" href="#">MONGODB</a>                                        <li class="nav-item"><a class="nav-link" href="#"></a></li>
+                        <a class="nav-link" href="#">ASP</a>
+                        <a class="nav-link" href="#">AI</a>
+                        <a class="nav-link" href="#">R</a>
+                        <a class="nav-link" href="#">GO</a>
+                        <a class="nav-link" href="#">KOTLIN</a>
+                        <a class="nav-link" href="#">SASS</a>
+                        <a class="nav-link" href="#">VUE</a>
+                        <a class="nav-link" href="#">GEN AI</a>
+                        <a class="nav-link" href="#">SCKIPY</a>
+                        <a class="nav-link" href="#">CYBERSECURITY</a>
+                        <a class="nav-link" href="#">DATA SCIENCE</a>
+                        <a class="nav-link" href="#">INTRO TO PROGRAMING</a>
+                        <a class="nav-link" href="#">BASH</a>
+                        <a class="nav-link" href="#">RUST</a>
+                    </ul>
+                </div>
 
-    <!--bottom header-->
-    <nav class="navbar navbar-expand-lg navbar-dark bottom-nav">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="bottomNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">HTML</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CSS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">JavaScript</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">SQL</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Python</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Java</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">PHP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">HowTo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">W3.CSS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">C</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">C++</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">C#</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">BOOTSTRAP</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">REACT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">MYSQL</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">JQUERY</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">EXCEL</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">XML</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Django</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">NUMPY</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">PANDAS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">NODEJS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">DSA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"></a></li>
-                </ul>
+                <!-- Right Scroll Button -->
+                <button class="scroll-btn ms-2" id="scrollRight">&gt;</button>
+
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </div>
     
+
+    <!--sub nav-->
+    
+
+    <div class="container-fluid">
+        <li><a class="dropdown-item" href="#">Certificates 1</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 2</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li><li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li><li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+    </div>
+
     <script src="/static/style/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const menu = document.getElementById('menu');
+    const btnLeft = document.getElementById('scrollLeft');
+    const btnRight = document.getElementById('scrollRight');
+
+    btnLeft.addEventListener('click', () => {
+      menu.scrollBy({ left: -150, behavior: 'smooth' });
+    });
+
+    btnRight.addEventListener('click', () => {
+      menu.scrollBy({ left: 150, behavior: 'smooth' });
+    });
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    menu.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - menu.offsetLeft;
+      scrollLeft = menu.scrollLeft;
+    });
+
+    menu.addEventListener('mouseleave', () => {
+      isDown = false;
+    });
+
+    menu.addEventListener('mouseup', () => {
+      isDown = false;
+    });
+
+    menu.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - menu.offsetLeft;
+      const walk = (x - startX) * 2;
+      menu.scrollLeft = scrollLeft - walk;
+    });
+  </script>
 </body>
 
 </html>
