@@ -1,234 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/static/images/icon/w3schools_icon.png">
-    <title>W3Schools Online Web Tutorials</title>
-    <link rel="stylesheet" href="/static/style/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/style/css/custom.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="/static/images/icon/w3schools_icon.png">
+        <title>W3Schools Online Web Tutorials</title>
+        <link rel="stylesheet" href="/static/style/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/style/css/custom.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <!--top nav-->
-    <div id="nav-bar">
-        <nav class="navbar navbar-expand-lg top-nav">
-            <div class="container-fluid">
+    <body>
 
-                <a class="navbar-brand" href="home.html">
-                    <img src="/static/images/logo/w3schools_logo.png" alt="Logo" width="80">
-                </a>
+        <!--navbar-->
+        <div class="navbar">
 
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!--top navigation-->
+            <nav class="navbar navbar-expand-lg top-nav fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="home.html">
+                        <img src="/static/images/logo/w3schools_logo.png" alt="Logo" height="30" width="30">
+                    </a>
 
-                
-                <div class="collapse navbar-collapse" id="topNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-Services">
-                        <!--Tutorials-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="TutorialsDropdown" href="home.html" role="button" data-bs-toggle="dropdown"aria-expanded="false">
-                                Tutorials
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="TutorialsDropdown">
-                                <li><a class="dropdown-item" href="#">HTML</a></li>
-                                <li><a class="dropdown-item" href="#">CSS</a></li>
-                                <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                            </ul>
-                        </li>
+                    <!-- Hamburger for mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavbar"aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <!--Exercise-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="ExercisesDropdown" href="home.html" role="button" data-bs-toggle="dropdown"aria-expanded="false">
-                                Exercises
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="ExercisesDropdown">
-                                <li><a class="dropdown-item" href="#">Exercises 1</a></li>
-                                <li><a class="dropdown-item" href="#">Exercises 2</a></li>
-                                <li><a class="dropdown-item" href="#">Exercises 3</a></li>
-                            </ul>
-                        </li>
-
-                        <!--Certificates-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="CertificatesDropdown" href="home.html" role="button" data-bs-toggle="dropdown"aria-expanded="false">
-                                Certificates
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="CertificatesDropdown">
-                                <li><a class="dropdown-item" href="#">Certificates 1</a></li>
-                                <li><a class="dropdown-item" href="#">Certificates 2</a></li>
-                                <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-                            </ul>
-                        </li>
-
-                        <!--Services-->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="ServicesDropdown" href="home.html" role="button" data-bs-toggle="dropdown"aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="ServicesDropdown">
-                                <li><a class="dropdown-item" href="#">Services 1</a></li>
-                                <li><a class="dropdown-item" href="#">Services 2</a></li>
-                                <li><a class="dropdown-item" href="#">Services 3</a></li>
-                            </ul>
-                        </li>
-
-                        <form class="d-flex me-5 " role="search">
-                            <input class="form-control" type="search" placeholder="Search...">
-                        </form>
-                        
-                    </ul>
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <a class="nav-link" href="home.html">For Teachers</a>
-                        <a class="nav-link" href="home.html">Upgrade</a>
-                        <a class="nav-link" href="home.html">Get Certified</a>
-                        <a class="btn btn-success" href="home.html">Sign In</a>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark bottom-nav">
-            <div class="container-fluid df-flex align-item-center">
-                <button class="scroll-btn me-2" id="scrollLeft">&lt;</button>
-                <!-- Scrollable Menu -->
-                <div class="scroll-menu flex-grow-1" id="menu">
+                    <div class="collapse navbar-collapse" id="topNavbar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <a class="nav-link" href="#">HTML</a>
-                        <a class="nav-link" href="#">CSS</a>
-                        <a class="nav-link" href="#">JavaScript</a>
-                        <a class="nav-link" href="#">SQL</a>
-                        <a class="nav-link" href="#">Python</a>
-                        <a class="nav-link" href="#">Java</a>
-                        <a class="nav-link" href="#">PHP</a>
-                        <a class="nav-link" href="#">HowTo</a>
-                        <a class="nav-link" href="#">W3.CSS</a>
-                        <a class="nav-link" href="#">C</a>
-                        <a class="nav-link" href="#">C++</a>
-                        <a class="nav-link" href="#">C#</a>
-                        <a class="nav-link" href="#">BOOTSTRAP</a>
-                        <a class="nav-link" href="#">REACT</a>
-                        <a class="nav-link" href="#">MYSQL</a>
-                        <a class="nav-link" href="#">JQUERY</a>
-                        <a class="nav-link" href="#">EXCEL</a>
-                        <a class="nav-link" href="#">XML</a>
-                        <a class="nav-link" href="#">DJANGO</a>
-                        <a class="nav-link" href="#">NUMPY</a>
-                        <a class="nav-link" href="#">PANDAS</a>
-                        <a class="nav-link" href="#">NODEJS</a>
-                        <a class="nav-link" href="#">DSA</a>
-                        <a class="nav-link" href="#">TYPESCRIPT</a>
-                        <a class="nav-link" href="#">ANGULAR</a>
-                        <a class="nav-link" href="#">GIT</a>
-                        <a class="nav-link" href="#">POSTGRESQL</a>
-                        <a class="nav-link" href="#">MONGODB</a>                                        <li class="nav-item"><a class="nav-link" href="#"></a></li>
-                        <a class="nav-link" href="#">ASP</a>
-                        <a class="nav-link" href="#">AI</a>
-                        <a class="nav-link" href="#">R</a>
-                        <a class="nav-link" href="#">GO</a>
-                        <a class="nav-link" href="#">KOTLIN</a>
-                        <a class="nav-link" href="#">SASS</a>
-                        <a class="nav-link" href="#">VUE</a>
-                        <a class="nav-link" href="#">GEN AI</a>
-                        <a class="nav-link" href="#">SCKIPY</a>
-                        <a class="nav-link" href="#">CYBERSECURITY</a>
-                        <a class="nav-link" href="#">DATA SCIENCE</a>
-                        <a class="nav-link" href="#">INTRO TO PROGRAMING</a>
-                        <a class="nav-link" href="#">BASH</a>
-                        <a class="nav-link" href="#">RUST</a>
+                        <!--tutorials-->
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="TutorialsDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tutorials
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="TutorialsDropdown">
+                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                        </ul>
+                        </li>
+
+                        <!--exercise-->
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ExercisesDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Exercises
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ExercisesDropdown">
+                            <li><a class="dropdown-item" href="#">Exercises 1</a></li>
+                            <li><a class="dropdown-item" href="#">Exercises 2</a></li>
+                            <li><a class="dropdown-item" href="#">Exercises 3</a></li>
+                        </ul>
+                        </li>
+
+                        <!--certificates-->
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="CertificatesDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Certificates
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="CertificatesDropdown">
+                            <li><a class="dropdown-item" href="#">Certificates 1</a></li>
+                            <li><a class="dropdown-item" href="#">Certificates 2</a></li>
+                            <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+                        </ul>
+                        </li>
+
+                        <!--services-->
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ServicesDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ServicesDropdown">
+                            <li><a class="dropdown-item" href="#">Services 1</a></li>
+                            <li><a class="dropdown-item" href="#">Services 2</a></li>
+                            <li><a class="dropdown-item" href="#">Services 3</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+
+                    <!-- Search -->
+                    <form class="d-flex top-search-bar ms-0 mt-2 mb-2" role="search">
+                        <input class="form-control" type="search" placeholder="Search...">
+                        <button class="btn" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+
+                    <!-- Right buttons -->
+                    <div class="navbar-nav ms-3">
+                        <a class="btn btn-simple me-2" href="home.html">For Teachers</a>
+                        <a class="btn btn-simple me-2" href="home.html">Upgrade</a>
+                        <a class="btn btn-simple me-2" href="home.html">Get Certified</a>
+                        <a class="btn sign-in-btn" href="home.html">Sign In</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+            
+            <!--bottom navigation-->
+            <nav class="bottom-nav navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid d-flex align-items-center">
+                <!-- Left Scroll Button -->
+                <button class="scroll-btn me-2" id="scrollLeft">&lt;</button>
+
+                <!-- Scrollable Menu -->
+                <div class="scroll-menu" id="menu">
+                    <ul class="navbar-nav flex-row">
+                        <li><a class="nav-link" href="#">HTML</a></li>
+                        <li><a class="nav-link" href="#">CSS</a></li>
+                        <li><a class="nav-link" href="#">JavaScript</a></li>
+                        <li><a class="nav-link" href="#">SQL</a></li>
+                        <li><a class="nav-link" href="#">Python</a></li>
+                        <li><a class="nav-link" href="#">Java</a></li>
+                        <li><a class="nav-link" href="#">PHP</a></li>
+                        <li><a class="nav-link" href="#">HowTo</a></li>
+                        <li><a class="nav-link" href="#">W3.CSS</a></li>
+                        <li><a class="nav-link" href="#">C</a></li>
+                        <li><a class="nav-link" href="#">C++</a></li>
+                        <li><a class="nav-link" href="#">C#</a></li>
+                        <li><a class="nav-link" href="#">BOOTSTRAP</a></li>
+                        <li><a class="nav-link" href="#">REACT</a></li>
+                        <li><a class="nav-link" href="#">MYSQL</a></li>
+                        <li><a class="nav-link" href="#">JQUERY</a></li>
+                        <li><a class="nav-link" href="#">EXCEL</a></li>
+                        <li><a class="nav-link" href="#">XML</a></li>
+                        <li><a class="nav-link" href="#">DJANGO</a></li>
+                        <li><a class="nav-link" href="#">NUMPY</a></li>
+                        <li><a class="nav-link" href="#">PANDAS</a></li>
+                        <li><a class="nav-link" href="#">NODEJS</a></li>
+                        <li><a class="nav-link" href="#">DSA</a></li>
+                        <li><a class="nav-link" href="#">TYPESCRIPT</a></li>
+                        <li><a class="nav-link" href="#">ANGULAR</a></li>
+                        <li><a class="nav-link" href="#">GIT</a></li>
+                        <li><a class="nav-link" href="#">POSTGRESQL</a></li>
+                        <li><a class="nav-link" href="#">MONGODB</a>    </li>                  
+                        <li><a class="nav-link" href="#">ASP</a></li>
+                        <li><a class="nav-link" href="#">AI</a></li>
+                        <li><a class="nav-link" href="#">R</a></li>
+                        <li><a class="nav-link" href="#">GO</a></li>
+                        <li><a class="nav-link" href="#">KOTLIN</a></li>
+                        <li><a class="nav-link" href="#">SASS</a></li>
+                        <li><a class="nav-link" href="#">VUE</a></li>
+                        <li><a class="nav-link" href="#">GEN AI</a></li>
+                        <li><a class="nav-link" href="#">SCKIPY</a></li>
+                        <li><a class="nav-link" href="#">CYBERSECURITY</a></li>
+                        <li><a class="nav-link" href="#">DATA SCIENCE</a></li>
+                        <li><a class="nav-link" href="#">INTRO TO PROGRAMING</a></li>
+                        <li><a class="nav-link" href="#">BASH</a></li>
+                        <li><a class="nav-link" href="#">RUST</a></li>
                     </ul>
                 </div>
 
                 <!-- Right Scroll Button -->
                 <button class="scroll-btn ms-2" id="scrollRight">&gt;</button>
+                </div>
+            </nav>
+        </div>
 
+        <!--hero section-->
+        <div class="hero-section container">
+            <h1 class="learntocodeh1">Learn to Code</h1>
+            <h3 class="learntocodeh3">With the world's largest web developer site.</h3>
+
+            <!-- search Bar -->
+            <form class="d-flex search-bar">
+                <input class="form-control" type="search" placeholder="Search our tutorials, e.g. HTML" aria-label="Search">
+                <button class="btn btn-success" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            <!-- Link -->
+            <p>
+            <a href="#" class="learntocodeh4 text-white text-decoration-underline">Not Sure Where To Begin?</a>
+            </p>
+        </div>
+        <section class="section-css">
+            <svg style="background-color:#D9EEE1;" width="100%" height="70" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path id="wavepath" d="M0,0  L110,0C35,150 35,0 0,100z" fill="#282A35"></path>
+            </svg>
+        </section>
+
+        <!--html section-->
+        <div class="html-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6" style="padding: 3%;">
+                        <h1 style="font-size: 100px; font-weight: 700; margin-top: -18px !important; color: black;">HTML</h1>
+                        <p style="font-size: 19px; color: black;">The language for building web pages</p>
+                        <a class="btn tut-btn" href="home.html">Learn HTML</a>
+                        <br>
+                        <a class="btn v-tut-btn" href="home.html">Video Tutrial</a>
+                        <br>
+                        <a class="btn ref-btn" href="home.html">HTML Reference</a>
+                        <br>
+                        <a class="btn cer-btn" href="home.html">Get Certified</a>
+                    </div>
+                    
+                    <div class="col-6" style="padding: 3%;">
+                        <div class="card card-custom ">
+                            <h3>HTML Example</h3>
+                            <div class="card-code">
+                                <span class="doc-type-color">&lt;!DOCTYPE html&gt;</span>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">html</span><span class="tag-color">></span>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">head</span><span class="tag-color">></span>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">title</span><span class="tag-color">></span>HTML Tutorials<span class="tag-color"><</span><span class="tag-name-color">/title</span><span class="tag-color">></span>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">/head</span><span class="tag-color">></span>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">body</span><span class="tag-color">></span>
+                                <br>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">h1</span><span class="tag-color">></span>This is a heading<span class="tag-color"><</span><span class="tag-name-color">/h1</span><span class="tag-color">></span>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">p</span><span class="tag-color">></span>This is a paragraph.<span class="tag-color"><</span><span class="tag-name-color">/p</span><span class="tag-color">></span>
+                                <br>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">/body</span><span class="tag-color">></span>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">/html</span><span class="tag-color">></span>
+                            </div>
+                            <a class="btn try-btn" href="home.html">Try it Yourself</a> 
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </div>
-    
+        </div>
 
-    <!--sub nav-->
-    
+        <!--css section-->
+        <div class="css-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6" style="padding: 3%;">
+                        <h1 style="font-size: 100px; font-weight: 700; margin-top: -18px !important; color: black;">CSS</h1>
+                        <p style="font-size: 19px; color: black;">The language for styling web pages</p>
+                        <a class="btn tut-btn" href="home.html">Learn CSS</a>
+                        <br>
+                        <a class="btn ref-btn" href="home.html">CSS Reference</a>
+                        <br>
+                        <a class="btn cer-btn" href="home.html">Get Certified</a>
+                    </div>
+                    
+                    <div class="col-6" style="padding: 3%;">
+                        <div class="card card-custom ">
+                            <h3>CSS Example</h3>
+                            <div class="card-code">
+                                <span class="css-selector-color">body</span> <span class="css-delimiter-color">{</span>
+                                <br>
+                                <span class="css-property-color">&nbsp;&nbsp;background-color</span><span class="css-delimiter-color">:</span> <span class="css-property-value-color">lightblue</span><span class="css-delimiter-color">;</span>
+                                <br>
+                                <span class="css-delimiter-color">}</span>
+                                <br>
+                                <br>
+                                <span class="css-selector-color">h1</span> <span class="css-delimiter-color">{</span>
+                                <br>
+                                <span class="css-property-color">&nbsp;&nbsp;color</span><span class="css-delimiter-color">:</span> <span class="css-property-value-color">white</span><span class="css-delimiter-color">;</span>
+                                <br>
+                                <span class="css-property-color">&nbsp;&nbsp;text-align</span><span class="css-delimiter-color">:</span> <span class="css-property-value-color">center</span><span class="css-delimiter-color">;</span>      
+                                <br>
+                                <span class="css-delimiter-color">}</span>
+                                <br>
+                                <br>
+                                <span class="css-selector-color">p</span> <span class="css-delimiter-color">{</span>
+                                <br>
+                                <span class="css-property-color">&nbsp;&nbsp;font-family</span><span class="css-delimiter-color">:</span> <span class="css-property-value-color">verdana</span><span class="css-delimiter-color">;</span>
+                                <br>
+                                <span class="css-delimiter-color">}</span>
 
-    <div class="container-fluid">
-        <li><a class="dropdown-item" href="#">Certificates 1</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 2</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+                            </div>
+                            <a class="btn try-btn" href="home.html">Try it Yourself</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li><li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
+        <!--javascript section-->
+        <div class="js-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6" style="padding: 3%;">
+                        <h1 style="font-size: 100px; font-weight: 700; margin-top: -18px !important;">JavaScript</h1>
+                        <p style="font-size: 19px;">The language for programming web pages</p>
+                        <a class="btn tut-btn" href="home.html">Learn JavaScript</a>
+                        <br>
+                        <a class="btn v-tut-btn" href="home.html">JavaScript Reference</a>
+                        <br>
+                        <a class="btn cer-btn" href="home.html">Get Certified</a>
+                    </div>
+                
+                    <div class="col-6" style="padding: 3%;">
+                        <div class="card card-custom ">
+                            <h3>JavaScript Example</h3>
+                            <div class="card-code">
+                                <span class="tag-color"><</span><span class="tag-name-color">button</span>
+                                <span class="attribute-color">onclick</span><span class="attribute-value-color">="myFunction()"</span><span class="tag-color">></span>Click Me!
+                                <br>
+                                <span class="tag-color"><</span></span><span class="tag-name-color">/button</span><span class="tag-color">></span>
+                                <br>
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">script</span><span class="tag-color">></span>
+                                <br>
+                                <span class="attribute-value-color">function</span>
+                                my Function() {
+                                <br>
+                                &nbsp;&nbsp;<span class="attribute-value-color">let</span>
+                                x = document.getElementById(<span class="attribute-color">"demo"</span>);
+                                <br>
+                                &nbsp;&nbsp;x.style.fontSize = <span class="attribute-color">"25px"</span>;
+                                <br>
+                                &nbsp;&nbsp;x.style.color = <span class="attribute-color">"red"</span>;
+                                <br>
+                                }
+                                <br>
+                                <span class="tag-color"><</span><span class="tag-name-color">/script</span><span class="tag-color">></span> 
+                            </div>
+                            <a class="btn try-btn" href="home.html">Try it Yourself</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li><li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-        <li><a class="dropdown-item" href="#">Certificates 3</a></li>
-    </div>
+        <!--python section-->
+        <div class="py-section"> 
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6" style="padding: 3%;">
+                        <h1 style="font-size: 100px; font-weight: 700; margin-top: -18px !important; color: black;">Python</h1>
+                        <p style="font-size: 19px; color: black;">A popular programming language</p>
+                        <a class="btn tut-btn" href="home.html">Learn Python</a>
+                        <br>
+                        <a class="btn ref-btn" href="home.html">Python Reference</a>
+                        <br>
+                        <a class="btn cer-btn" href="home.html">Get Certified</a>
+                    </div>
+                    
+                    <div class="col-6" style="padding: 3%;">
+                        <div class="card card-custom">
+                            <h3>Python Example</h3>
+                            <div class="card-code">
+                                <span class="keyword-color">if</span>
+                                <span class="number-color">5</span>
+                                >
+                                <span class="number-color">2</span>
+                                :
+                                <br>
+                                print(<span class="string-color">"Five is greater than two!"</span>)
+                            </div>
+                            <a class="btn try-btn" href="home.html">Try it Yourself</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <script src="/static/style/js/bootstrap.bundle.min.js"></script>
-    <script>
-    const menu = document.getElementById('menu');
-    const btnLeft = document.getElementById('scrollLeft');
-    const btnRight = document.getElementById('scrollRight');
+        </div>  
 
-    btnLeft.addEventListener('click', () => {
-      menu.scrollBy({ left: -150, behavior: 'smooth' });
-    });
+        <!--sql section-->
+        <div class="sql-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6" style="padding: 3%;">
+                        <h1 style="font-size: 100px; font-weight: 700; margin-top: -18px !important; color: black;">SQL</h1>
+                        <p style="font-size: 19px; color: black;">A language for acessing databases</p>
+                        <a class="btn tut-btn" href="home.html">Learn SQL</a>
+                        <br>
+                        <a class="btn ref-btn" href="home.html">SQL Reference</a>
+                        <br>
+                        <a class="btn cer-btn" href="home.html">Get Certified</a>
+                    </div>
+        
+                    <div class="col-6" style="padding: 3%;">
+                        <div class="card card-custom">
+                            <h3>SQL Example</h3>
+                            <div class="card-code">
+                                <span class="keyword-color">SELECT</span>
+                                *
+                                <span class="keyword-color">FROM</span>
+                                Customers
+                                <br>
+                                <span class="keyword-color">WHERE</span>
+                                Country=<span class="string-color">"Mexico"</span>;
+                            </div>
+                            <a class="btn try-btn" href="home.html">Try it Yourself</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    btnRight.addEventListener('click', () => {
-      menu.scrollBy({ left: 150, behavior: 'smooth' });
-    });
+        </div>
 
-    let isDown = false;
-    let startX;
-    let scrollLeft;
 
-    menu.addEventListener('mousedown', (e) => {
-      isDown = true;
-      startX = e.pageX - menu.offsetLeft;
-      scrollLeft = menu.scrollLeft;
-    });
+        <script src="/static/style/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const menu = document.getElementById('menu');
+            const btnLeft = document.getElementById('scrollLeft');
+            const btnRight = document.getElementById('scrollRight');
 
-    menu.addEventListener('mouseleave', () => {
-      isDown = false;
-    });
+            function updateButtons() {
+            btnLeft.disabled = menu.scrollLeft <= 0;
+            btnRight.disabled = menu.scrollLeft + menu.clientWidth >= menu.scrollWidth;
+            }
 
-    menu.addEventListener('mouseup', () => {
-      isDown = false;
-    });
+            btnLeft.addEventListener('click', () => {
+            menu.scrollBy({ left: -150, behavior: 'smooth' });
+            setTimeout(updateButtons, 300);
+            });
 
-    menu.addEventListener('mousemove', (e) => {
-      if (!isDown) return;
-      e.preventDefault();
-      const x = e.pageX - menu.offsetLeft;
-      const walk = (x - startX) * 2;
-      menu.scrollLeft = scrollLeft - walk;
-    });
-  </script>
-</body>
+            btnRight.addEventListener('click', () => {
+            menu.scrollBy({ left: 150, behavior: 'smooth' });
+            setTimeout(updateButtons, 300);
+            });
+
+            menu.addEventListener('scroll', updateButtons);
+            window.addEventListener('resize', updateButtons);
+
+            updateButtons(); // init state
+        </script>
+    </body>
 
 </html>
