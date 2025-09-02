@@ -131,14 +131,15 @@ body {
     border-color: #fff4a3 !important;
 }
 
-.ref-btn{
+.ref-btn, .learn-btn{
     background-color: #282A35 !important;
     border-color: #282A35 !important;
 }
 
-.ref-btn:hover{
+.ref-btn:hover, .learn-btn:hover{
     background-color: #000 !important;
     border-color: #000 !important;
+    color: white !important;
 }
 
 .cer-btn {
@@ -170,11 +171,22 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Source Sans Pro' sans-serif;
 }
 
+h2{
+    font-size: 45px;
+    font-weight: 700;
+}
+
 h3{
     font-size: 24px;
     display: block;
-    
     text-align: left;
+}
+
+h5{
+    color: #3a3a3a !important;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
 }
 
 .hero-section {
@@ -254,7 +266,7 @@ h3{
     background-color: #fff4a3;
 }
 
-.js-section{
+.js-section, .course-container{
     background-color: #282A35;
 }
 
@@ -320,6 +332,65 @@ h3{
 
 .attribute-color, .string-color{
     color: green;
+}
+
+.course-cards, .tutorial-card{
+    color: white !important;
+    max-width: 1400px;
+    margin-top: 60px;
+}
+
+.course-col, .tutorial-col{
+    padding: 2% 3%;
+    text-align: center;
+    width: 100%;
+}
+
+.pink-card, .yellow-card, .light-pink-card, .light-green-card, .turquois-card, .bootstrap-card{
+    color: #000;
+    background-color: #ffc0c7;
+    padding: 24px 20px !important;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.col-6-card{
+    padding: 36px 24px !important;
+    border-radius: 5px;
+}
+
+.col-3-card{
+    padding: 24px 15px !important;
+    border-radius: 5px;
+    width: 90%;
+    margin: 15px !important;
+}
+
+.yellow-card{ 
+    background-color: #fff4a3 !important;
+    color: #000;
+}
+
+.light-pink-card{
+    background-color: #F3ECEA;
+    color: #000;
+}
+
+.light-green-card{
+    background-color: #D9EEE1;
+    color: #000;
+}
+
+.turquois-card{
+    background-color: #96d4d4;
+    color: #000;
+}
+
+.bootstrap-card{
+    background-color: #E9E7EB;
 }
 
 
